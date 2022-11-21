@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400&family=Fraunces:opsz,wght@9..144,700&family=Josefin+Sans:wght@300&family=Merriweather:ital,wght@0,300;0,400;0,700;1,300;1,400&family=Montserrat:wght@500;700&family=Poppins:wght@500;700;800;900&family=Red+Hat+Display:ital,wght@0,700;0,900;1,500&family=Six+Caps&display=swap');
 
 body{
+    display: flexbox;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -97,19 +98,46 @@ h5{
     }
 @media screen and (min-width:992px) {
     body{
-       background: url(images/pattern-background-desktop.svg);
-       background-repeat: no-repeat;
+        display: flexbox;
+        min-height: 100vh;
+       background: url(images/pattern-background-desktop.svg) no-repeat top center;
        background-size: contain;
+       background-color: #e0e8ff;
     }
     .card{
-        margin-top: 14rem;
+        margin-top: 10rem;
+        width: 450px;
+    }
+    .img{
+        width: 450px;
+        height: 200px;
+        object-fit: cover;
+    }
+    h1{
+        margin-top: 3rem;
+    }
+    p{
+        margin-top: 2rem;
+    }
+    .plan{
+        margin-top: 2rem;
+        margin-left: 5rem;
+        
     }
     .card-info{
         background: white;
-        height: 320px;
+        height:420px;
         border-bottom-left-radius: 20px;
-        border-bottom-right-radius: 20px;
-            
+        border-bottom-right-radius: 20px;  
+    }
+    .btn{
+        margin-top: 1.5rem;
+        margin-left: 5rem;
+       
+    }
+    h5{
+        margin-top: 2rem;
+       
     }
     .card-info{
         box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
